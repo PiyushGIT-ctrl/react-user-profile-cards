@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.Parent{
+  min-height: 100vh ;
+  width: 100%;
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Card{
+  height: 470px;
+  width: 100%;
+  max-width: 300px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+.Image{
+  height: 300px;
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.Image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.ImageContent{
+  color: #000000;
+  padding: 10px 35px;
+}
+
+.ImageName{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ImageName span{
+  font-size: 1.6rem;
+}
+
+.ImageDesc{
+  font-size: 1rem;
+  padding-top: 10px;
+  line-height: 22px;
+  color: rgb(128, 128, 128);
+}
+
+.ImageFooter{
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ImageStats{
+  display: flex;
+  flex: 1;
+  column-gap: 10px;
+}
+
+.ImageStats .Followers,
+.ImageStats .TasksDone{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ImageStats span{
+  font-weight: bold;
+}
+
+.FollowBtn{
+  border: none;
+  background-color: rgb(222, 222, 222);
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
